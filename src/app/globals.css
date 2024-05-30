@@ -2,32 +2,372 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
+@layer base {
   :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+
+    --primary: 222.2 47.4% 11.2%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 222.2 84% 4.9%;
+
+    --radius: 0.5rem;
+
+    /* my css variables */
+    --clr: rgb(72, 72, 72);
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
   }
 }
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+/* nav  */
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: rgb(72, 72, 72);
+  flex-direction: row;
+  width: 100%;
+  height: 52px;
+}
+.nav .logoSearch .search form {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 0.9rem;
+  border-bottom: 1px solid;
+  width: 28.5rem;
+  font-weight: 700;
+  padding-bottom: 6px;
+  font-size: 0.85rem;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+.logoImg img {
+  width: 6rem;
+  height: 3rem;
+  padding: 8px 12px;
+  text-align: center;
+}
+.logoSearch {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.links ul {
+  display: flex;
+  flex-direction: row;
+}
+.links ul li svg {
+  margin: 0 6px;
+}
+.row {
+  display: flex;
+  flex-direction: row;
+  padding: 0 2rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.row :nth-child(1) {
+  display: flex;
+  align-items: center;
+}
+.row:hover {
+  color: red;
+}
+.searchImg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.searchImg:hover {
+  color: red;
+}
+.nav .logoSearch .search form select {
+  position: absolute;
+  right: 0;
+  cursor: pointer;
+}
+.nav .logoSearch .search form select:hover {
+  color: red;
+}
+.bi-search {
+  margin: 0 8px;
+}
+.navSelect {
+  margin: 1rem;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+.navSelect option {
+  height: 5rem;
+  padding: 5px 8px;
+}
+.navSelect option:hover {
+  background-color: rgb(169, 169, 169);
+}
+/* lower nav  */
+.lowerNav {
+  display: flex;
+  gap: 4rem;
+  justify-content: center;
+  align-items: center;
+  height: 44px;
+  color: var(--clr);
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+.lowerNav:first-child {
+  cursor: pointer;
+}
+.categorySelect {
+  cursor: pointer;
+  border-bottom: 4px solid red;
+  padding: 8px;
+  color: red;
+}
+
+.linkMiddleSection {
+  display: flex;
+  flex-direction: column;
+}
+.topSection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
+  background-color: red;
+  color: white;
+}
+.lowerSection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: red;
+  border: 2px solid red;
+  width: 6rem;
+  height: 3rem;
+  font-weight: 700;
+  border-radius: 10px;
+  margin: 0 50%;
+}
+.headingMiddleSection h1 {
+  color: grey;
+}
+/* lower nav --> games section  */
+.gamesSection {
+  display: flex;
+  width: 100%;
+  gap: 4rem;
+  justify-content: center;
+  align-items: flex-start;
+  color: #545454;
+  font-size: 0.9rem;
+  padding: 2rem 0;
+  position: absolute;
+  z-index: 10000;
+  background: white;
+}
+.gamesbtn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 8rem;
+  text-align: center;
+}
+.gamesbtn button {
+  width: 10rem;
+  height: 5rem;
+  border: 1px solid rgb(214, 213, 213);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+}
+.gamesbtn p {
+  margin: 1rem 0;
+}
+
+.linksMiddleSection {
+  display: flex;
+  flex-direction: column;
+  margin: 0.6rem 0;
+  font-weight: 300;
+}
+.widthFull {
+  width: 100%;
+}
+.middleSection {
+  width: 100%;
+  gap: 2rem;
+  justify-content: center;
+  margin: 2rem 0;
+  font-size: 0.8rem;
+}
+.headingMiddleSection {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: 600;
+}
+.headingMiddleSection:hover {
+  color: red;
+}
+
+/* lower nav --> play section  */
+.playSection {
+  width: 100%;
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  padding: 2rem 0;
+  position: absolute;
+  z-index: 10000;
+  background: white;
+}
+
+.playSection .playBtn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.playSection .playBtn button {
+  border: 1px solid rgb(175, 175, 175);
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+.playSection .playBtn button img {
+  border-radius: 10px;
+}
+
+/* slider  */
+.sliderContainer {
+  width: 100%;
+  height: 75vh;
+}
+.sliderContainer img {
+  height: 75vh;
+  width: 100%;
+  z-index: 1;
+}
+.autoplay-progress {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10000;
+}
+
+.autoplay-progress svg {
+  width: 48px;
+  height: 48px;
+  transform: rotate(-90deg);
+}
+rect {
+  fill: none;
+  stroke: #000;
+  stroke-width: 4;
+  stroke-dasharray: 160;
+  stroke-dashoffset: calc(160 * var(--progress));
+  transition: stroke-dashoffset 0.1s linear;
+}
+.autoplay-progress span {
+  position: absolute;
+  font-size: 12px;
+  font-weight: bold;
+}
+.autoplay-progress .sliderImgHeading {
+  font-size: 4rem;
+  font-weight: 700;
+  position: relative;
+  bottom: 5rem;
+}
+
+.dropdownContent .storeSection {
+  z-index: 1000000;
+  position: fixed;
+  background: white;
+  padding-bottom: 2rem;
+}
+/* utility classes  */
+.p-4 {
+  padding: 1rem;
+}
+.width-8 {
+  width: 8rem;
+}
+.contrast-0 {
+  filter: contrast(0.6);
+}
+.redClrHover:hover {
+  color: red;
+}
+
+/* Dropdown Animation CSS */
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
   }
 }
+/* media query */
+
+/* 1000px */

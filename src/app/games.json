@@ -1,0 +1,18 @@
+[
+  {
+    "Name": "My Nintendo Store",
+    "img": "/images/nintendo-switch.png"
+  },
+  {
+    "Name": "Games",
+    "img": "/images/speaker.png"
+  },
+  {
+    "Name": "Nintendo Switch",
+    "img": "/images/calendar.png"
+  },
+  {
+    "Name": "Play Nintendo",
+    "img": "/images/plus.png"
+  }
+]

@@ -34,3 +34,22 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+contributions to authors for these icons
+
+1. search icon
+   <a href="https://www.flaticon.com/free-icons/search" title="search icons">Search icons created by Catalin Fertu - Flaticon</a>
+   "Icon made by Catalin Fertu from www.flaticon.com"
+
+2. Nintendo icon
+   <a href="https://wallpapers.com/png/nintendo-logo-red-background-9pqvkbymbgyt5sp1.html">Wallpaper by summerjway</a> on Wallpapers.com
+   3.calender icon
+   <a href="https://www.freepik.com/icons/calendar">Icon by Ekros</a>
+3. Nintemdo Switch icon
+   <a href="https://iconscout.com/icons/nintendo-switch" class="text-underline font-size-sm" target="_blank">Nintendo Switch</a> by <a href="https://iconscout.com/contributors/icon-54" class="text-underline font-size-sm" target="_blank">Icon 54</a>
+4. speaker icon
+   <a href="https://iconscout.com/icons/speaker" class="text-underline font-size-sm" target="_blank">Speaker</a> by <a href="https://iconscout.com/contributors/LuizCarvalho" class="text-underline font-size-sm">Luiz Carvalho</a> on <a href="https://iconscout.com" class="text-underline font-size-sm">IconScout</a>
+   6.Calender icon
+   <a href="https://iconscout.com/icons/calendar" class="text-underline font-size-sm" target="_blank">Calendar</a> by <a href="https://iconscout.com/contributors/ziyad-al-junaidi" class="text-underline font-size-sm">Soba Mustache</a> on <a href="https://iconscout.com" class="text-underline font-size-sm">IconScout</a>
+   7.plus icon
+   <a href="https://iconscout.com/icons/plus" class="text-underline font-size-sm" target="_blank">Plus</a> by <a href="https://iconscout.com/contributors/useiconic" class="text-underline font-size-sm">Useiconic</a> on <a href="https://iconscout.com" class="text-underline font-size-sm">IconScout</a>
