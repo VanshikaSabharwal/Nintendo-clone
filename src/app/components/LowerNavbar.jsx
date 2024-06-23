@@ -23,10 +23,10 @@ const LowerNavbar = () => {
   return (
     <>
       <div className="lowerNav flex justify-center flex-row gap-12">
-        <div className="flex justify-center items-center redClrHover gap-x-4">
+        <div className="flex justify-center flex-row items-center redClrHover gap-x-4">
           <TbCloudCode className="redClrHover" />
           <button
-            className="flex items-center justify-center flex-col cursor-pointer redClrHover"
+            className="flex items-center justify-center flex-row cursor-pointer redClrHover"
             onClick={() => toggleDropdown("store")}
           >
             My Nintendo Store
@@ -37,10 +37,10 @@ const LowerNavbar = () => {
             )}
           </button>
         </div>
-        <div className="flex relative flex-col justify-center items-center redClrHover gap-x-4">
+        <div className="flex relative flex-row justify-center items-center redClrHover gap-x-4">
           <PiPlusBold className="redClrHover" />
           <button
-            className="flex items-center justify-center flex-col cursor-pointer redClrHover"
+            className="flex items-center justify-center flex-row cursor-pointer redClrHover"
             onClick={() => toggleDropdown("games")}
           >
             Games
@@ -51,10 +51,10 @@ const LowerNavbar = () => {
             )}
           </button>
         </div>
-        <div className="flex relative flex-col justify-center items-center redClrHover">
+        <div className="flex relative flex-row justify-center items-center redClrHover">
           <PiMouseMiddleClickDuotone className="redClrHover" />
           <button
-            className="flex items-center justify-center flex-col cursor-pointer redClrHover"
+            className="flex items-center justify-center flex-row cursor-pointer redClrHover"
             onClick={() => toggleDropdown("switch")}
           >
             Nintendo Switch
@@ -65,19 +65,19 @@ const LowerNavbar = () => {
             )}
           </button>
         </div>
-        <div className="flex justify-center items-center redClrHover">
+        <div className="flex justify-center flex-row items-center redClrHover">
           <BiSolidCommentDetail />
           <button
-            className="flex items-center justify-center flex-col cursor-pointer redClrHover"
+            className="flex items-center justify-center flex-row cursor-pointer redClrHover"
             onClick={() => toggleDropdown("play")}
           >
             <Link href="/">News & Events</Link>
           </button>
         </div>
-        <div className="flex justify-center items-center redClrHover">
+        <div className="flex justify-center flex-row items-center redClrHover">
           <RiStarSmileFill className="redClrHover" />
           <button
-            className="flex items-center justify-center flex-col cursor-pointer redClrHover"
+            className="flex items-center justify-center flex-row cursor-pointer redClrHover"
             onClick={() => toggleDropdown("play")}
           >
             Play Nintendo

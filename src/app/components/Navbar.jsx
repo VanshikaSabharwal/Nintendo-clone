@@ -117,7 +117,7 @@ const Navbar = () => {
               </Link>
             </li>
             <li className="row">
-              <Link href="/login">
+              <Link href="signin">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="16"

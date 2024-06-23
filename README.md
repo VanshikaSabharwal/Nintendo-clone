@@ -45,7 +45,7 @@ contributions to authors for these icons
    <a href="https://wallpapers.com/png/nintendo-logo-red-background-9pqvkbymbgyt5sp1.html">Wallpaper by summerjway</a> on Wallpapers.com
    3.calender icon
    <a href="https://www.freepik.com/icons/calendar">Icon by Ekros</a>
-3. Nintemdo Switch icon
+3. Nintendo Switch icon
    <a href="https://iconscout.com/icons/nintendo-switch" class="text-underline font-size-sm" target="_blank">Nintendo Switch</a> by <a href="https://iconscout.com/contributors/icon-54" class="text-underline font-size-sm" target="_blank">Icon 54</a>
 4. speaker icon
    <a href="https://iconscout.com/icons/speaker" class="text-underline font-size-sm" target="_blank">Speaker</a> by <a href="https://iconscout.com/contributors/LuizCarvalho" class="text-underline font-size-sm">Luiz Carvalho</a> on <a href="https://iconscout.com" class="text-underline font-size-sm">IconScout</a>

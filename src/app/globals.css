@@ -345,6 +345,10 @@ rect {
   padding-bottom: 2rem;
 }
 /* utility classes  */
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
 .p-4 {
   padding: 1rem;
 }

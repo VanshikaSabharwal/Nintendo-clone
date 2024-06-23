@@ -1,7 +1,9 @@
-import React from "react";
+import SignUpForm from "@/app/components/forms/SignUpForm";
 
-const signup = () => {
-  return <div>signup</div>;
-};
-
-export default signup;
+export default function SignInRoute() {
+  return (
+    <div>
+      <SignUpForm />
+    </div>
+  );
+}
